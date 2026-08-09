@@ -1,0 +1,147 @@
+.header {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    border-bottom: solid 1px rgba(201, 165, 103, 0.15);
+    z-index: 4;
+}
+
+.header-title {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    transition: color .3s, fill .3s;
+}
+
+.header-title svg {
+    height: 40px;
+    width: 40px;
+    fill: var(--color-text);
+    transition: color .3s, fill .3s;
+}
+
+.header-title:hover {
+    color: var(--color-principal);
+
+    & svg {
+        fill: var(--color-principal);
+    }
+
+}
+
+.header-title:focus-visible {
+    color: var(--color-principal);
+    outline: solid 1px var(--color-principal);
+
+    & svg {
+        fill: var(--color-principal);
+    }
+
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+.header-link {
+    transition: color .3s;
+
+    /*allows me to align the link text with the text on my newsletter button*/
+    margin-left: 1rem;
+
+}
+
+.header-link:hover {
+    color: var(--color-principal);
+}
+
+.header-link:focus-visible {
+    color: var(--color-principal);
+    outline: solid 1px var(--color-principal);
+}
+
+.active {
+    color: var(--color-principal);
+    & svg {
+        fill: var(--color-principal) ;
+    }
+}
+
+.button {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: solid 1px var(--color-principal);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: var(--color-principal);
+    transition: background .3s, color .3s, fill .3s;
+}
+
+.button svg {
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+    fill: var(--color-principal);
+    transition: fill .3s;
+}
+
+.button:hover {
+    background-color: var(--color-principal);
+    color: var(--color-background);
+
+    & svg {
+        fill: var(--color-background);
+    }
+}
+
+.button:focus-visible {
+    background-color: var(--color-principal);
+    color: var(--color-background);
+    outline: solid 1px var(--color-background);
+
+    & svg {
+        fill: var(--color-background);
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
+        gap: 0;
+        background-color: var(--color-background);
+        /*position: sticky;
+        top: 0px;*/
+    }
+
+    .header-nav {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+        width: max-content;
+    }
+
+    .header-link {
+        margin: 0;
+    }
+
+}

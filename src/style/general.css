@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-background: #0F0F0F ;
+    --color-text: #EDEDED ;
+    --color-principal: #C9A567 ;
+}
+
+html, body {
+    font-size: 18px;
+    line-height: 1.7;
+    font-family: "Literata", serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin-inline: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--color-principal) var(--color-background);
+    scrollbar-width: thin;
+}
+
+body {
+    max-width: 1500px;
+}
+
+a {
+    color: inherit;
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection {
+    background-color: var(--color-principal);
+    color: var(--color-background);
+    text-shadow: none;
+}
+
+p::-moz-selection,
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection  {
+    background-color: var(--color-principal);
+    color: var(--color-background);
+    text-shadow: none;
+}
+
+/* Chrome, Safari, Edge */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-principal);
+    border-radius: 10px;
+    border: 2px solid var(--color-background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: color-mix(in srgb, var(--color-principal) 80%, white);
+}

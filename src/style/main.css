@@ -43,20 +43,18 @@
     outline: solid 1px var(--color-principal);
 }
 
-.footer-go-up,
+.go-up,
 .go-back {
 
     margin-top: 1rem;
 
-    /*display: grid;
-    place-items: center;*/
     display: flex;
     align-items: center;
     gap: 0.5rem;
 
     text-decoration: none;
 
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     border: solid 1px var(--color-text);
     border-radius: 5px;
     width: max-content;
@@ -71,12 +69,20 @@
     }
 }
 
-.footer-go-up {
-    align-self: flex-end;
+.go-back {
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
 }
 
-.footer-go-up:hover,
-.footer-go-up:focus-visible,
+.go-up {
+    align-self: flex-end;
+
+    & svg {
+        margin-top: 0;
+    }
+}
+
+.go-up:hover,
+.go-up:focus-visible,
 .go-back:hover,
 .go-back:focus-visible {
     background-color: rgba(255, 255, 255, 0.1);

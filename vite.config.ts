@@ -12,7 +12,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         blog: resolve(__dirname, 'blog.html'),
         projets: resolve(__dirname, 'projets.html'),
-        article1: resolve(__dirname, 'articles/article1.html')
+        voila_pourquoi_jai_cree_le_site_leprimipile: resolve(__dirname, 'articles/voila_pourquoi_jai_cree_le_site_leprimipile.html')
       },
     },
   },

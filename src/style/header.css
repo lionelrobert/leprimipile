@@ -6,7 +6,6 @@
     align-items: center;
     gap: 2rem;
     text-align: center;
-    border-bottom: solid 1px rgba(201, 165, 103, 0.15);
     z-index: 4;
 }
 

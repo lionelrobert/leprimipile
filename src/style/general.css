@@ -48,7 +48,6 @@ h3::-moz-selection  {
     text-shadow: none;
 }
 
-/* Chrome, Safari, Edge */
 ::-webkit-scrollbar {
     width: 10px;
 }

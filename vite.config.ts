@@ -15,6 +15,7 @@ export default defineConfig({
         voila_pourquoi_jai_cree_le_site_leprimipile: resolve(__dirname, 'articles/voila_pourquoi_jai_cree_le_site_leprimipile.html'),
         importance_de_se_creer_un_socle: resolve(__dirname, '/articles/importance_de_se_creer_un_socle.html'),
         build_in_public_1: resolve(__dirname, '/articles/build_in_public_1.html'),
+        apprends_et_au_pire_gagne: resolve(__dirname, '/articles/apprends_et_au_pire_gagne.html'),
       },
     },
   },
